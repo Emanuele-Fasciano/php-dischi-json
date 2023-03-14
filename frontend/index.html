@@ -48,11 +48,11 @@
                                 </div>
                             </div>
                         </div>
+                        <span class="button" v-if="activeDisk != null"
+                                @click="exit()">
+                            x
+                        </span>
                     </div>
-                    <button class="btn btn-primary" v-if="activeDisk != null"
-                            @click="exit()">
-                        x
-                    </button>
                 </div>
             </div>
         </main>
